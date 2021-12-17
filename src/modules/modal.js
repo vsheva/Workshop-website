@@ -29,6 +29,7 @@ const modal = () => {
     document.body.addEventListener('click', openPopup);
 };
 
+
 export default modal;
 
 
