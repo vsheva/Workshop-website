@@ -8,9 +8,9 @@ class Carousel {
                     position = 0,
                     infinity = false,
                     responsive = []
-                }) {
+                })
 
-
+    {
         this.main = document.querySelector(main)
         this.wrap = document.querySelector(wrap)
         this.slides = this.wrap.children
@@ -18,8 +18,6 @@ class Carousel {
         this.next = document.querySelector(next)
 
 
-
-        // опции:
         this.slidesToShow = slidesToShow;
         this.slideWidth = Math.floor(100 / this.slidesToShow)
         this.maxPosition = this.slides.length - this.slidesToShow
@@ -27,7 +25,6 @@ class Carousel {
         this.infinity = infinity
         this.responsive = responsive
     }
-
 
 
     init() {
@@ -96,7 +93,6 @@ class Carousel {
 
 
 
-
     nextSlide() {
         if (this.infinity || this.position < this.maxPosition) {
             ++this.position;
@@ -109,12 +105,10 @@ class Carousel {
 
 
 
-
     controlSlider() {
         this.prev.addEventListener('click', this.prevSlide.bind(this))
         this.next.addEventListener('click', this.nextSlide.bind(this))
     }
-
 
 
 
@@ -147,7 +141,6 @@ class Carousel {
                 renderResponse(this.slidesToShow)
             }
         };
-
 
 
         checkResponse();
