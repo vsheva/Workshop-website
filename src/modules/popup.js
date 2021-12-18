@@ -1,10 +1,10 @@
-const modal = () => {
-    const openPopup = event => {
-        if (!event.target.matches('.fancyboxModal')) {
+const togglePopup = () => {
+    const openPopup = (e) => {
+        if (!e.target.matches('.fancyboxModal')) {
             return;
         }
-        event.preventDefault();
-        const modalBtn = event.target,
+        e.preventDefault();
+        const modalBtn = e.target,
             popupContent = document.querySelector(modalBtn.getAttribute('href')),
             popup = popupContent.closest('.modal--opened'),
             overlay = document.querySelector('.overlay');
@@ -13,8 +13,8 @@ const modal = () => {
         overlay.style.display = 'block';
         popupContent.style.display = 'block';
 
-        const closePopup = event => {
-            if (!event.target.matches('.modal__close, .overlay')) {
+        const closePopup = (e) => {
+            if (!e.target.matches('.modal__close, .overlay')) {
                 return;
             }
             popup.style.display = 'none';
@@ -29,9 +29,5 @@ const modal = () => {
     document.body.addEventListener('click', openPopup);
 };
 
-
-export default modal;
-
-
-
+export default togglePopup;
 
