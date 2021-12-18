@@ -132,7 +132,7 @@ class Carousel {
 
 
         const checkResponse = () => {
-            const widthWindow = document.documentElement.clientWidth;
+            const widthWindow = document.documentElement.clientWidth
 
             if (widthWindow < maxResponse) {
                 for (let i = 0; i < allResponse.length; i++) {

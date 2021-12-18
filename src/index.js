@@ -1,10 +1,10 @@
-'use strict';
+'use strict'
 
-import togglePopup from './modules/popup';
-import Carousel from './modules/carousel';
+import togglePopup from './modules/popup'
+import Carousel from './modules/carousel'
 
 
-togglePopup();
+togglePopup()
 
 
 const carouselBenefits = new Carousel({
@@ -21,7 +21,7 @@ const carouselBenefits = new Carousel({
         }
     ]
 });
-carouselBenefits.init();
+carouselBenefits.init()
 
 
 const carouselServices = new Carousel({
@@ -38,4 +38,4 @@ const carouselServices = new Carousel({
         }
     ]
 });
-carouselServices.init();
+carouselServices.init()
