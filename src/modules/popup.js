@@ -29,6 +29,7 @@ const togglePopup = () => {
     document.body.addEventListener('click', openPopup)
 }
 
+
 export default togglePopup
 
 
