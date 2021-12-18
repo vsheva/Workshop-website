@@ -3,7 +3,10 @@
 import togglePopup from './modules/popup'
 import Carousel from './modules/carousel'
 
+
 togglePopup()
+
+
 
 
 const carouselBenefits = new Carousel({
