@@ -37,7 +37,6 @@ class Carousel {
     }
 
 
-
     addStyleClass() {
         this.main.classList.add('glo-carousel')
         this.wrap.classList.add('glo-carousel_wrap')
@@ -45,7 +44,6 @@ class Carousel {
             item.classList.add('glo-carousel_item')
         }
     }
-
 
 
     addStyle() {

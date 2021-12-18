@@ -7,7 +7,7 @@ const togglePopup = () => {
         const modalBtn = e.target,
             popupContent = document.querySelector(modalBtn.getAttribute('href')),
             popup = popupContent.closest('.modal--opened'),
-            overlay = document.querySelector('.overlay');
+            overlay = document.querySelector('.overlay')
 
         popup.style.display = 'block'
         overlay.style.display = 'block'
