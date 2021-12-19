@@ -17,9 +17,6 @@ const timer = deadline => {
     }
 
 
-
-
-
     const updateClock = () => {
 
         const timer = getTimeRemaining()
@@ -32,7 +29,7 @@ const timer = deadline => {
                     minutesElem = item.querySelector('.count_3 span'),
                     secondsElem = item.querySelector('.count_4 span')
 
-               // добавление нулей,если <10
+                // добавление нулей
                 daysElem.textContent = timer.days < 10 ? `0${timer.days}` : timer.days
                 hoursElem.textContent = timer.hours < 10 ? `0${timer.hours}` : timer.hours
                 minutesElem.textContent = timer.minutes < 10 ? `0${timer.minutes}` : timer.minutes
