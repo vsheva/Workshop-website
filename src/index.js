@@ -2,7 +2,7 @@
 
 import togglePopup from './modules/popup'
 import Carousel from './modules/carousel'
-
+import timer from './modules/timer';
 
 togglePopup()
 
@@ -41,3 +41,6 @@ const carouselServices = new Carousel({
     ]
 });
 carouselServices.init()
+
+
+timer('01 January 2022');
