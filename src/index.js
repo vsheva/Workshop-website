@@ -3,6 +3,7 @@
 import togglePopup from './modules/popup'
 import Carousel from './modules/carousel'
 import timer from './modules/timer'
+import docsGallery from './modules/docsGallery';
 
 
 
@@ -45,3 +46,5 @@ carouselServices.init()
 
 
 timer('01 January 2022')
+
+docsGallery()

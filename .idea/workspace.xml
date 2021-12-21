@@ -20,7 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7362f5b1-1fab-4934-8998-e5407166475e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/modules/docsGallery.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/balkony.html" beforeDir="false" afterPath="$PROJECT_DIR$/balkony.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/animate.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/animate.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kuhni.html" beforeDir="false" afterPath="$PROJECT_DIR$/kuhni.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/popup.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../middle_diplom_zadanie/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../middle_diplom_zadanie/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +62,17 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../glo-final-project-basstet" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../middle_diplom_zadanie" />
+  </component>
+  <component name="RunManager">
+    <configuration name="kuhni.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Workshop-website/kuhni.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.kuhni.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -71,6 +90,7 @@
       <workItem from="1639686746580" duration="12419000" />
       <workItem from="1639700213823" duration="7345000" />
       <workItem from="1639772365905" duration="18118000" />
+      <workItem from="1640088787782" duration="1616000" />
     </task>
     <servers />
   </component>
@@ -93,13 +113,13 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="500" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1639870890599">
+    <state x="500" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1640070386984">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="500" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1639870890599" />
-    <state x="550" y="168" key="FileChooserDialogImpl" timestamp="1639872737330">
+    <state x="500" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1640070386984" />
+    <state x="550" y="168" key="FileChooserDialogImpl" timestamp="1640069668040">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="550" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1639872737330" />
+    <state x="550" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1640069668040" />
   </component>
 </project>
