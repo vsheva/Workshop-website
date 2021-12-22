@@ -41,6 +41,7 @@ const validation = () => {
             }
         }
 
+
         // проверка и подсветка поля:
         const checkIt = event => {
             const target = event.target;
@@ -55,7 +56,7 @@ const validation = () => {
         // проверка поля при изменении:
         elementsForm.forEach(elem => elem.addEventListener('change', checkIt));
 
-        // игнорировать нажатие кнопки "отправить", если поля невалидны:
+        // игнорировать "отправить", когда поля невалидны:
         form.addEventListener('submit', event => {
             let successed = true;
             elementsForm.forEach(elem => {

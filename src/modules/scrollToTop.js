@@ -2,6 +2,7 @@ const scrollToTop = () => {
     const scrollBtn = document.querySelector('.smooth-scroll'),
         secondSection = document.getElementById('services')
 
+
     window.addEventListener('scroll', () => {
         const secondSectionCoor = secondSection.getBoundingClientRect().top
 

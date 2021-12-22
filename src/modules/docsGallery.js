@@ -5,6 +5,7 @@ const docsGallery = () => {
         if (!event.target.closest('.sertificate-document')) {
             return;
         }
+
         event.preventDefault()
 
         const modalBtn = event.target.closest('.sertificate-document'),

@@ -2,6 +2,7 @@ const calc = () => {
     if (!document.getElementById('calc')) {
         return;
     }
+
     let calcBlock = document.getElementById('calc'),
         calcType = document.getElementById('calc-type'),
         calcMaterial = document.getElementById('calc-type-material'),
@@ -21,6 +22,7 @@ const calc = () => {
             calcTotal.value = ''
         }
     };
+
 
     // изменение итого:
     calcBlock.addEventListener('change', event => {
