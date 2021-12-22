@@ -1,15 +1,17 @@
 'use strict'
 
 import togglePopup from './modules/popup'
+import scrollToTop from './modules/scrollToTop'
 import Carousel from './modules/carousel'
 import timer from './modules/timer'
-import docsGallery from './modules/docsGallery';
-
+import docsGallery from './modules/docsGallery'
+import calc from './modules/calc'
+import validation from './modules/validation';
 
 
 
 togglePopup()
-
+scrollToTop()
 
 const carouselBenefits = new Carousel({
     main: '.benefits-inner',
@@ -48,3 +50,7 @@ carouselServices.init()
 timer('01 January 2022')
 
 docsGallery()
+
+validation()
+
+calc();
