@@ -1,6 +1,6 @@
 const calc = () => {
     if (!document.getElementById('calc')) {
-        return;
+        return
     }
 
     let calcBlock = document.getElementById('calc'),
@@ -29,7 +29,7 @@ const calc = () => {
     calcBlock.addEventListener('change', event => {
         if (event.target.matches('select, input')) {
             calcTotal.value = ''
-            countTotal();
+            countTotal()
         }
     })
 
