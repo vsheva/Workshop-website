@@ -3,10 +3,11 @@ const docsGallery = () => {
 
     const toggleGalleryPopup = (event) => {
         if (!event.target.closest('.sertificate-document')) {
-            return;
+            return
         }
 
         event.preventDefault()
+
 
         const modalBtn = event.target.closest('.sertificate-document'),
             imgSrc = modalBtn.getAttribute('href'),
@@ -15,10 +16,14 @@ const docsGallery = () => {
             imgContainer = popupContent.querySelector('.modal-content'),
             popup = popupContent.closest('.modal--opened');
 
+
+
         imgContainer.innerHTML = `<img src="${imgSrc}" class="img-responsive" alt="">`
         popup.style.display = 'block'
         overlay.style.display = 'block'
         popupContent.style.display = 'block'
+
+
 
         const closeGalleryPopup = event => {
             if (!event.target.matches('.modal__close, .overlay')) {
@@ -29,6 +34,7 @@ const docsGallery = () => {
             popupContent.style.display = 'none'
             document.body.removeEventListener('click', closeGalleryPopup)
         }
+
 
         document.body.addEventListener('click', closeGalleryPopup)
     }
