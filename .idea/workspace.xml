@@ -22,9 +22,6 @@
     <list default="true" id="7362f5b1-1fab-4934-8998-e5407166475e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/calc.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/calc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/docsGallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/docsGallery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/scrollToTop.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/scrollToTop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/validation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../middle_diplom_zadanie/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../middle_diplom_zadanie/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +82,7 @@
       <workItem from="1639686746580" duration="12419000" />
       <workItem from="1639700213823" duration="7345000" />
       <workItem from="1639772365905" duration="18118000" />
-      <workItem from="1640088787782" duration="10904000" />
+      <workItem from="1640088787782" duration="11067000" />
     </task>
     <servers />
   </component>

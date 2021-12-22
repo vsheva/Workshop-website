@@ -21,7 +21,8 @@ const calc = () => {
         } else {
             calcTotal.value = ''
         }
-    };
+    }
+
 
 
     // изменение итого:
@@ -30,7 +31,8 @@ const calc = () => {
             calcTotal.value = ''
             countTotal();
         }
-    });
+    })
+
 
     // запрет ввода нецифр:
     calcBlock.addEventListener('input', event => {
