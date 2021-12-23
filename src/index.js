@@ -6,7 +6,7 @@ import Carousel from './modules/carousel'
 import timer from './modules/timer'
 import docsGallery from './modules/docsGallery'
 import calc from './modules/calc'
-import validation from './modules/validation'
+import formValidation from './modules/formValidation'
 import sendForm from './modules/sendForm';
 
 
@@ -52,7 +52,9 @@ timer('01 January 2023')
 
 docsGallery()
 
-validation()
+formValidation()
 
 calc()
-sendForm()
+//sendForm()
+sendForm("form11");
+sendForm("form12");

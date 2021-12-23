@@ -1,78 +1,87 @@
-const sendForm = () => {
-    const errorMessage = `Что-то пошло не так...`,
-        successMessage = `Спасибо! Мы скоро с вами свяжемся!`,
-        statusMessage = document.createElement('div')
 
-    // создание запроса и отправка данных на сервер:
-    const postData = body => fetch('./server.php', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(body)
-    })
+const sendForm = (formId) => {
+    const form = document.getElementById(formId);
+    const errorText = 'Что-то пошло не так...';
+    //const loadText = 'Загрузка...'  //spinner
+    let img = document.createElement("img");
+    img.src = "images/form/spinner.svg";
 
-    // отправка данных формы:
-    const submitForm = event => {
-        if (!event.target.closest('form')) {
-            return;
-        }
-        event.preventDefault()
-        const form = event.target
+    const successText = 'Спасибо! Мы скоро с Вами свяжемся!';
+    const status = document.createElement('div');
 
-        for (const elem of form.elements) {
-            if (elem.tagName.toLowerCase() !== 'button' && elem.type !== 'button' && elem.type !== 'hidden') {
-                // не отправлять, если есть поле не прошедшее валидацию:
-                if (!elem.classList.contains('success')) {
-                    return;
-                }
-            }
-        }
+    status.style.cssText = "font-size: 2rem; color: #fff";
 
-        form.append(statusMessage)
 
-        // прелоадер:
-        statusMessage.innerHTML = `<div class="sk-double-bounce">
-        <div class="sk-child sk-double-bounce-1"></div>
-        <div class="sk-child sk-double-bounce-2"></div>
-      </div>`
+    const validate = (list) => {
+        let success = true
 
-        // оформление данных для отправки:
-        const formData = new FormData(form),
-            body = {}
-
-        formData.forEach((val, key) => {
-            body[key] = val
-        });
-
-        postData(body)
-            .then(response => {
-                if (response.status !== 200) {
-                    throw new Error('response status is not 200');
-                }
-                statusMessage.style.color = '#00902a';
-                statusMessage.innerHTML = successMessage;
-
-                // очистить поля после отправки:
-                for (const elem of form.elements) {
-                    if (elem.tagName.toLowerCase() !== 'button' && elem.type !== 'button') {
-                        elem.value = '';
-                        elem.classList.remove('success')
-                    }
-                }
-            })
-            .catch(error => {
-                statusMessage.style.color = '#f00'
-                statusMessage.innerHTML = errorMessage
-                console.error(error);
-            })
-            .finally(() => {
-                // убрать сообщение через 5 секунд:
-                setTimeout(() => statusMessage.remove(), 5000)
-            })
+        return success
     }
 
-    document.body.addEventListener('submit', submitForm)
+
+    const sendData = (data) => {
+        return fetch("https://jsonplaceholder.typicode.com/posts", {
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers: {
+                "Content-Type": "application/json"
+            }
+        }).then(res => res.json())
+    }
+
+
+    form.addEventListener("submit", (event) => {
+        event.preventDefault()
+
+        const formData = new FormData(form)
+        const formBody = {}
+        const formElements = form.querySelectorAll("input")
+
+
+        const removeMessage = () => {
+            setTimeout(() => status.remove(), 2000);
+        };
+
+
+        status.innerHTML = `<img src="images/form/spinner.svg" alt="">`
+        form.append(status)
+
+        formData.forEach((val, key) => {
+            formBody[key] = val
+        })
+
+
+        //
+        if (validate(formElements)) {
+            sendData(formBody)
+                .then(data => {
+                    status.textContent = successText
+
+                    formElements.forEach(input => {
+                        input.value = ''
+                    })
+                    //
+                    //setTimeout(() => {
+                        //document.querySelector(".popup").style.display = "none";
+                    //}, 3000);
+
+                    //unBlockBody()
+                    removeMessage();
+
+                    //
+                })
+                .catch(err => {
+                    status.textContent = errorText
+                    removeMessage();
+                })
+        }
+    })
+
 }
 
-export default sendForm
+export default sendForm;
+
+
+
+
+
